@@ -1,4 +1,7 @@
 package Ajinkya.Framework;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 /**
  * Hello world!
@@ -6,8 +9,12 @@ package Ajinkya.Framework;
  */
 public class App 
 {
-    public static void main( String[] args )
+	@Test
+    void GoogleOpen()
     {
-        System.out.println( "Hello World!" );
+    	WebDriver driver = new FirefoxDriver();
+    	driver.get("https:\\www.google.com");
+    	driver.getTitle();
+    	driver.close();
     }
 }

@@ -1,0 +1,9 @@
+Selenim Locators
+
+By.linkText
+By.partialLinkText
+
+Xpath Selection functions
+//*[text()='']
+
+https://www.guru99.com/all-about-testng-and-selenium.html
