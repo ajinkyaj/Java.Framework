@@ -6,7 +6,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 
-public class BrowserOperations {
+public class BrowserOperations extends TextAssertion{
 	
 	public WebDriver driver;
 	
