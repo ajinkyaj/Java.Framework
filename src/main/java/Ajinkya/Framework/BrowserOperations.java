@@ -17,14 +17,17 @@ public class BrowserOperations {
 		FileInputStream fis = new FileInputStream("\\Java.Framework\\DataFiles\\browser.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
-		BrowserObject BO = new BrowserObject();
-		return driver = BO.setBrowser(browserName);
+		return driver = BrowserObject.setBrowser(browserName);
 	}
 	public WebDriver initializeUserDriver(String browserName)
 	{
-		BrowserObject BO = new BrowserObject();
-		return driver = BO.setBrowser(browserName);
+		//BrowserObject BO = new BrowserObject();
+		return driver = BrowserObject.setBrowser(browserName);
 		
+	}
+	public void maximizeBrowser()
+	{
+		driver.manage().window().maximize();
 	}
 
 }
