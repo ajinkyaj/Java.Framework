@@ -17,13 +17,9 @@ public class BrowserOperations extends TextAssertion{
 		FileInputStream fis = new FileInputStream("\\Java.Framework\\DataFiles\\browser.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
-		BrowserObject BO = new BrowserObject();
-		return driver = BO.setBrowser(browserName);
 	}
 	public WebDriver initializeUserDriver(String browserName)
 	{
-		BrowserObject BO = new BrowserObject();
-		return driver = BO.setBrowser(browserName);
 		
 	}
 

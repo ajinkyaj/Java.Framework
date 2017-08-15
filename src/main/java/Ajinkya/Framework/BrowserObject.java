@@ -3,10 +3,11 @@ package Ajinkya.Framework;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+<<<<<<< HEAD
 public class BrowserObject{
+=======
+>>>>>>> develop
 
-	WebDriver driver;
-	public WebDriver setBrowser(String browserName)
 	{
 		if(browserName.equals("firefox"))
 		{
